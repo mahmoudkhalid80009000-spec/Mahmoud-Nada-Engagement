@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#100d0b">
+<title>دعوة خطوبة محمود وندى</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#e9cc88;--gold-dark:#9b7436;--ink:#100d0b;--ivory:#fff7e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;color:var(--ivory);font-family:Cairo,sans-serif;background:radial-gradient(ellipse at 50% 20%,#47331a 0,#21170e 32%,#100d0b 75%);overflow-x:hidden}
+#particles{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+.particle{position:absolute;bottom:-40px;color:var(--gold);opacity:0;animation:floatUp var(--duration) linear infinite;animation-delay:var(--delay);font-size:var(--size);text-shadow:0 0 12px #dcb85b}
+@keyframes floatUp{0%{transform:translate3d(0,0,0) rotate(0);opacity:0}12%{opacity:.75}85%{opacity:.55}100%{transform:translate3d(var(--drift),-115vh,0) rotate(260deg);opacity:0}}
+.screen{position:relative;z-index:1;min-height:100svh;display:grid;place-items:center;padding:24px 14px}
+.panel{width:min(100%,720px);text-align:center;position:relative}
+.kicker{font-size:11px;letter-spacing:4px;color:var(--gold);direction:ltr}
+.monogram{font-family:'Great Vibes',cursive;font-size:43px;color:var(--gold);margin:14px 0 2px;direction:ltr}
+h1{font-family:'Playfair Display',serif;font-weight:400;font-size:clamp(39px,9vw,72px);line-height:1.12;color:var(--gold);margin:6px 0;text-shadow:0 0 32px #d7af5550;direction:ltr}
+.arabic-names{font-size:clamp(22px,5vw,31px);margin:10px 0;color:#fff7e8}
+.amp{color:var(--gold);padding:0 8px}
+.rule{display:flex;align-items:center;justify-content:center;gap:12px;margin:22px auto;color:var(--gold)}
+.rule:before,.rule:after{content:"";height:1px;width:min(25vw,130px);background:linear-gradient(90deg,transparent,var(--gold))}
+.intro{font-size:16px;line-height:2;color:#f4e7cd;margin:0 auto;max-width:520px}
+.gold{color:var(--gold)}
+.date{font-family:'Playfair Display',serif;direction:ltr;color:var(--gold);font-size:clamp(23px,5vw,34px);margin:23px 0 4px}
+.venue{font-size:23px;color:var(--gold);margin:5px 0}
+.meta{color:#e7d9bb;margin:0}
+.card{border:1px solid #e9cc887a;background:linear-gradient(145deg,#fffaf00d,#fffaf003);box-shadow:0 20px 80px #0006,inset 0 0 35px #e9cc8808;padding:clamp(25px,6vw,48px);position:relative;overflow:hidden}
+.card:before{content:"✦";position:absolute;top:12px;left:16px;color:#d5b366;font-size:16px}.card:after{content:"✦";position:absolute;bottom:12px;right:16px;color:#d5b366;font-size:16px}
+.enter{animation:reveal .9s cubic-bezier(.2,.8,.2,1) both}
+@keyframes reveal{from{opacity:0;transform:translateY(24px) scale(.97);filter:blur(5px)}to{opacity:1;transform:none;filter:blur(0)}}
+.hidden{display:none!important}
+.name-form{width:min(100%,440px);margin:26px auto 0;padding:18px;border:1px solid #e9cc884d;background:#100d0bbd}
+.name-form label{display:block;color:#e8d5ad;font-size:14px;margin-bottom:9px}
+.name-form input{width:100%;min-height:48px;background:#fffaf0;color:#21170e;border:1px solid var(--gold);border-radius:2px;padding:10px 13px;font:16px Cairo,sans-serif;text-align:center;outline:none}
+.name-form input:focus{box-shadow:0 0 0 3px #e9cc8833}
+button,.btn{font:600 14px Cairo,sans-serif;border:1px solid var(--gold);background:transparent;color:var(--gold);min-height:46px;padding:10px 17px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;transition:transform .2s,background .2s}
+button:hover,.btn:hover{transform:translateY(-2px);background:#e9cc881c}
+.primary{background:linear-gradient(135deg,#f7dfa0,#bd9148);color:#171006;border-color:#f7dfa0}
+.primary:hover{background:linear-gradient(135deg,#ffebba,#d1a354)}
+.actions{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:24px}
+.actions>*{flex:0 1 auto}
+.note{font-size:11px;color:#b7a889;line-height:1.9;margin:15px auto 0;max-width:480px}
+.footer{font:12px 'Playfair Display',serif;letter-spacing:3px;color:#c6a65e;margin-top:25px;direction:ltr}
+.countdown{display:flex;justify-content:center;gap:8px;margin:17px auto 4px;direction:ltr}
+.count{border:1px solid #e9cc884d;min-width:68px;padding:8px 7px;background:#e9cc8808}
+.count strong{display:block;font:26px 'Playfair Display',serif;color:var(--gold)}.count small{font-size:9px;letter-spacing:1px;color:#d9c9a8}
+.music-fab{position:fixed;z-index:5;left:14px;bottom:14px;border-radius:100px;min-height:44px;background:#171109eF;box-shadow:0 5px 25px #0008}
+@media(max-width:430px){.screen{padding:14px 10px}.card{padding:28px 17px}.kicker{letter-spacing:2px}.intro{font-size:15px}.actions>*{width:100%}.count{min-width:0;flex:1;padding:8px 3px}.count strong{font-size:23px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="particles" aria-hidden="true"></div>
+<main class="screen">
+<section class="panel">
+  <div class="kicker">YOU ARE CORDIALLY INVITED</div>
+  <div class="monogram">M &amp; N</div>
+  <div class="card enter" id="welcome">
+    <div style="font-size:34px;color:var(--gold);animation:heartbeat 2s infinite">♡</div>
+    <p class="intro">في ليلة مليانة حب وفرحة،<br>يسعدنا دعوتك لتكون جزءًا من بداية حكايتنا.</p>
+    <form class="name-form" id="guestForm">
+      <label for="guestName">اكتب اسمك عشان نجهزلك دعوتك الخاصة ✨</label>
+      <input id="guestName" name="guestName" maxlength="50" autocomplete="name" placeholder="اسمك هنا" required>
+      <button class="primary" type="submit" style="width:100%;margin-top:12px">افتح دعوتك ♡</button>
+    </form>
+    <p class="note">دعوة خاصة من محمود وندى — يسعدنا وجودك معانا.</p>
+  </div>
+
+  <div class="card hidden" id="invitation">
+    <div class="kicker">A NEW CHAPTER BEGINS</div>
+    <h1>Mahmoud <span style="font-size:.6em">&amp;</span> Nada</h1>
+    <div class="arabic-names">محمود <span class="amp">♥</span> ندى</div>
+    <div class="rule">✦</div>
+    <p class="intro">أهلًا يا <span class="gold" id="guestDisplay">ضيفنا العزيز</span> ❤️<br>يشرفنا وجودك ومشاركتك فرحتنا في يوم مميز من أيام عمرنا.</p>
+    <div class="date">15 OCTOBER 2026</div>
+    <p class="meta">الخميس · الساعة 9 مساءً</p>
+    <div class="rule">❦</div>
+    <p class="meta">مكان الاحتفال</p>
+    <div class="venue">اكاسيا · Acacia</div>
+    <div class="countdown" aria-label="العد التنازلي">
+      <div class="count"><strong id="days">--</strong><small>DAYS</small></div>
+      <div class="count"><strong id="hours">--</strong><small>HOURS</small></div>
+      <div class="count"><strong id="minutes">--</strong><small>MINUTES</small></div>
+      <div class="count"><strong id="seconds">--</strong><small>SECONDS</small></div>
+    </div>
+    <div class="actions">
+      <a class="btn primary" id="mapBtn" href="https://maps.app.goo.gl/qsFwG4KbgTW5TJdt5?g_st=ac" target="_blank" rel="noopener">⌖ موقع القاعة</a>
+      <button id="shareBtn" type="button">↗ ابعت الدعوة على واتساب</button>
+      <button id="editName" type="button">✎ تغيير الاسم</button>
+    </div>
+    <p class="note">مستنيينك تنورنا وتشاركنا الفرحة 💛</p>
+    <div class="footer">WITH LOVE · MAHMOUD &amp; NADA</div>
+  </div>
+</section>
+</main>
+<button class="music-fab" id="musicBtn" type="button">♫ تشغيل سجل يا تاريخ</button>
+<div id="songPlayer" style="display:none;position:fixed;z-index:6;left:14px;bottom:68px;width:min(320px,calc(100vw - 28px));background:#171109;border:1px solid #c9a45c;border-radius:14px;padding:6px;box-shadow:0 8px 28px #0009"><iframe id="songFrame" width="100%" height="180" src="" title="تامر حسني - سجل يا تاريخ" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen style="border:0;border-radius:9px"></iframe></div>
+<style>@keyframes heartbeat{0%,100%{transform:scale(1)}50%{transform:scale(1.16)}}</style>
+<script>
+const particleBox=document.getElementById('particles');
+for(let i=0;i<32;i++){let p=document.createElement('span');p.className='particle';p.textContent=Math.random()>.45?'✦':'♡';p.style.left=Math.random()*100+'%';p.style.setProperty('--duration',(8+Math.random()*12)+'s');p.style.setProperty('--delay',(-Math.random()*18)+'s');p.style.setProperty('--size',(10+Math.random()*16)+'px');p.style.setProperty('--drift',(-70+Math.random()*140)+'px');particleBox.appendChild(p)}
+const form=document.getElementById('guestForm'), input=document.getElementById('guestName'), welcome=document.getElementById('welcome'), invitation=document.getElementById('invitation');
+function showInvite(name){const clean=(name||'ضيفنا العزيز').trim().slice(0,50);if(!clean)return;document.getElementById('guestDisplay').textContent=clean;welcome.classList.add('hidden');invitation.classList.remove('hidden');invitation.classList.remove('enter');void invitation.offsetWidth;invitation.classList.add('enter');}
+form.addEventListener('submit',e=>{e.preventDefault();showInvite(input.value)});
+document.getElementById('editName').addEventListener('click',()=>{invitation.classList.add('hidden');welcome.classList.remove('hidden');input.focus()});
+const eventDate=new Date('2026-10-15T21:00:00+03:00');
+function tick(){let d=eventDate.getTime()-Date.now();if(d<0)d=0;const vals=[Math.floor(d/86400000),Math.floor(d%86400000/3600000),Math.floor(d%3600000/60000),Math.floor(d%60000/1000)];['days','hours','minutes','seconds'].forEach((id,i)=>document.getElementById(id).textContent=String(vals[i]).padStart(2,'0'))}
+tick();setInterval(tick,1000);
+const musicBtn=document.getElementById('musicBtn'), songPlayer=document.getElementById('songPlayer'), songFrame=document.getElementById('songFrame');
+let songOpen=false;
+musicBtn.addEventListener('click',()=>{songOpen=!songOpen;songPlayer.style.display=songOpen?'block':'none';musicBtn.textContent=songOpen?'♫ إخفاء الأغنية':'♫ تشغيل سجل يا تاريخ';songFrame.src=songOpen?'https://www.youtube.com/embed/vrwVkS_bT8c?autoplay=1&rel=0':'';});
+document.getElementById('shareBtn').addEventListener('click',()=>{const name=document.getElementById('guestDisplay').textContent;const msg=`دعوة خاصة لـ ${name} ❤️\\nخطوبة محمود وندى\\nالخميس 15 أكتوبر 2026 الساعة 9 مساءً\\nقاعة أكاسيا\\n${location.href}`;window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank','noopener')});
+// You can replace this search URL with the exact Google Maps venue link.
+</script>
+</body>
+</html>
